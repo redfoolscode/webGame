@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 40px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    left: 20px;
+    top: 150px;
+}
+.animate{
+    animation: jump 1.6s linear;
+}
+@keyframes jump {
+    0%{top: 150px}
+    15%{top: 10px}
+    30%{top: 60px}
+    70%{top: 150px}
+    100%{top: 150px}
+}
+
+#block{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 3s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+
+p{
+    text-align: center;
+}
+
+#button-div{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+button{
+    padding: 30px;
+}
+
+#b-red{
+    background-color: red;
+}
+
+#b-green{
+    background-color: green;
+}
+
+#block-enemy{
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block-enemy 4s infinite linear;
+}
+
+@keyframes block-enemy{
+    0%{left: 500px}
+    100%{left: -20px}
+}
